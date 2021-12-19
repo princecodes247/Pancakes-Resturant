@@ -1,0 +1,86 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+
+}
+
+body {
+	/*font-family: "san-serif";*/
+}
+
+h1 {
+	font-size: 2.87em;
+}
+
+#hero {
+	background-color: #793;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+.hero_text {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 10px;
+	align-items: center;
+}
+
+button {
+	padding: 10px 3em;
+}
+
+#highlights {
+	text-align: center;
+}
+
+.highlights_nav {
+	display: flex;
+	justify-content: center;
+	margin: 10px 0;
+	grid-gap: 10px;
+	padding: 10px;
+	width: 100%;
+
+}
+
+.nav_item {
+	padding: 10px;
+	background-color: #444;
+	flex: 1;
+}
+
+.order {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 20px;
+	padding: 20px;
+}
+
+.order_img {
+	height: 140px;
+	width: 140px;
+	background-color: #777;
+}
+
+.order_info {
+	text-align: left;
+}
+#menu {
+	display: flex;
+	grid-gap: 30px;
+	align-items: center;
+	padding: 10px;
+}
+
+#menu ol {
+	margin-bottom: 30px;
+}
