@@ -66,10 +66,11 @@ body {
 	background: var(--main-bg);
 }
 header {
-	position: sticky;
+	position: fixed;
+	width: 100vw;
 	top: 0;
 	left: 0;
-	background: var(--primary-color);
+	background: transparent;
 	height: 8vh;
 	padding: 10px;
 	display: flex;
@@ -105,11 +106,13 @@ section {
 #hero {
 	margin-top: 0;
 	background-color: var(--primary-color);
-	height: 80vh;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+	background: url("wave.svg");
+	/*background-repeat: no-repeat;*/
+	background-size: 100%;
 
 }
 
