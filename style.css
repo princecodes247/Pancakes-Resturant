@@ -141,6 +141,7 @@ h1 {
 section {
 	margin-top: 20px;
 	text-align: center;
+	padding: 0 1em;
 }
 
 #hero {
@@ -279,3 +280,27 @@ footer {
 	align-items: center;
 	height: 8vh;
 }
+
+	@media (min-width: 640px) {
+		header {
+			height: 10vh;
+		}
+			#hero {
+				justify-content: start;
+				text-align: left;
+			}
+
+			.hero_text {
+				text-align: left;
+				align-items: start;
+			}
+
+			section {
+				padding: 0 4em;
+			}
+
+			.menu-list {
+				  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+			}
+
+		}
