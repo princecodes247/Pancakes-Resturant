@@ -16,13 +16,19 @@ h1 {
 	font-size: 2.87em;
 }
 
+section {
+	margin-top: 20px;
+	text-align: center;
+}
+
 #hero {
+	margin-top: 0;
 	background-color: #793;
 	height: 80vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
+	
 
 }
 
@@ -89,7 +95,8 @@ button {
 .menu-list {
 	margin-top: 10px;
 	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 45% 45%;
+	justify-content: center;
 	align-items: center;
 	grid-gap: 15px;
 	list-style: none;
@@ -97,6 +104,9 @@ button {
 
 .menu-item {
 	background: #999;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .menu-item-img {
@@ -106,3 +116,35 @@ button {
 	margin-bottom: 10px;
 }
 
+#contact {
+	padding: 50px 0;
+}
+
+.contact-info {
+	padding: 30px;
+}
+
+#contact form {
+	display: flex;
+	flex-direction: column;
+	padding: 0 10%;
+	grid-gap: 10px;
+}
+#contact form label {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+input, textarea {
+	padding: 10px;
+	resize: none;
+}
+
+footer {
+	display: flex;
+	grid-gap: 20px;
+	justify-content: center;
+	align-items: center;
+	height: 8vh;
+}
