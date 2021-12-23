@@ -44,8 +44,8 @@
 	--main-bg: var(--honeydew);
 	--sub-bg: var(--sunglow);
 	--alt-bg: var(--blue-green);
-	--secondary-color: var(--light-cornflower-blue);
-	--primary-color: var(--light-cornflower-blue);
+	--secondary-color: #457b9d;
+	--primary-color: #457b9d;
 	--alt-color: var(--);
 --button-active: var(--honey-yellow);
 --button-hover:;
@@ -110,10 +110,10 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url("wave.svg");
+	background: url("wave-bg.svg");
 	/*background-repeat: no-repeat;*/
 	background-size: 100%;
-
+	/*clip-path: url(#waveSvg)*/
 }
 
 .hero_text {
