@@ -6,7 +6,78 @@
 
 :root {
 
+
+/*.one {*/
+/* CSS HEX */
+--imperial-red: #e63946ff;
+--honeydew: #f1faeeff;
+--powder-blue: #a8dadcff;
+--celadon-blue: #457b9dff;
+--prussian-blue: #1d3557ff;
+/*}*/
+
+
+/*.two {*/
+/* CSS HEX */
+--light-cornflower-blue: #8ecae6ff;
+--blue-green: #219ebcff;
+--prussian-blue: #023047ff;
+--honey-yellow: #ffb703ff;
+--orange: #fb8500ff;
+/*}*/
+
+/*.three {*/
+	/* CSS HEX */
+--red-salsa: #f94144ff;
+--orange-red: #f3722cff;
+--yellow-orange-color-wheel: #f8961eff;
+--mango-tango: #f9844aff;
+--maize-crayola: #f9c74fff;
+--pistachio: #90be6dff;
+--zomp: #43aa8bff;
+--cadet-blue: #4d908eff;
+--queen-blue: #577590ff;
+--cg-blue: #277da1ff;
+/*}*/
+
+/*.four {*/
+	/* CSS HEX */
+--eggshell: #f4f1deff;
+--terra-cotta: #e07a5fff;
+--independence: #3d405bff;
+--green-sheen: #81b29aff;
+--deep-champagne: #f2cc8fff;
+/*}*/
+
+/*.five {*/
+	/* CSS HEX */
+--yellow-green-crayola: #d4e09bff;
+--light-goldenrod-yellow: #f6f4d2ff;
+--tea-green: #cbdfbdff;
+--dark-salmon: #f19c79ff;
+--medium-carmine: #a44a3fff;
+/*}*/
+
+/*.six {*/
+	/* CSS HEX */
+--electric-blue: #90f1efff;
+--mimi-pink: #ffd6e0ff;
+--green-yellow-crayola: #ffef9fff;
+--mint-green: #c1fba4ff;
+--light-green: #7bf1a8ff;
+/*}*/
+
+/*.seven {*/
+	/* CSS HEX */
+--sizzling-red: #ff595eff;
+--sunglow: #ffca3aff;
+--yellow-green: #8ac926ff;
+--green-blue-crayola: #1982c4ff;
+--royal-purple: #6a4c93ff;
+/*}*/
 }
+
+.root {}
 
 body {
 	/*font-family: "san-serif";*/
