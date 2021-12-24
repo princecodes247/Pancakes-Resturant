@@ -14,35 +14,66 @@ function scrollFunction() {
   }
 } 
 
-// For highlights nav
-let highlightNavs = document.querySelectorAll(".highlights_nav .nav_item")
-
-highlightNavs.forEach(item => {
-	item.addEventListener("click", () => {
-		highlightNavs.forEach(targ => {
-			targ.classList.remove("nav_item-active")
-		})
-		item.classList.add("nav_item-active")
-
-	})
-})
-
-
 // For highlights
 let highlights = {
 	today: [
 		{
-		img: "",
-		name: "Chohe Pancakes",
-		sides: "Chicken Wings",
+		img: "./burger.png",
+		name: "Beef Burger",
+		sides: "Chips",
+		toppings: "Pepper Sauce",
+		price: "5000"
+	}
+	],
+	week: [
+	{
+	img: "./burger.png",
+		name: "Beef Burger",
+		sides: "Chips",
+		toppings: "Pepper Sauce",
+		price: "5000"
+	}
+	],
+	month: [
+	, 
+	{
+		img: "./honey.png",
+		name: "Plain Pancakes",
+		sides: "Chicken",
+		toppings: "Honey",
+		price: "2300"
+	}
+	],
+}
+let test = {
+	today: [
+		{
+		img: "./burger.png",
+		name: "Beef Burger",
+		sides: "Chips",
 		toppings: "Pepper Sauce",
 		price: "5000"
 	}, 
 	{
-		name: "Chohe Pancakes",
-		sides: "Chicken Wings",
-		toppings: "Pepper Sauce",
-		price: "5000"
+		img: "./honey.png",
+		name: "Plain Pancakes",
+		sides: "Chicken",
+		toppings: "Honey",
+		price: "2300"
+	},
+	{
+		img: "./fruits.png",
+		name: "Plain Pancakes",
+		sides: "Fruits",
+		toppings: "Maple Syrup",
+		price: "2300"
+	},
+	{
+		img: "./nuggets.png",
+		name: "Plain Pancakes",
+		sides: "Fruits",
+		toppings: "Maple Syrup",
+		price: "2300"
 	}
 	],
 	week: [
@@ -84,7 +115,7 @@ let createHighlight = (data, target) => {
 	info.appendChild(order)
 	let img = document.createElement("div")
 	img.classList.add("order_img")
-	img.style.background = "url('img (4).jpg')";
+	img.style.background = "url("+data.img+")";
 	img.style.backgroundPosition = "0px";
 	img.style.backgroundSize = "120px";
 	img.style.backgroundRepeat = "no-repeat";
@@ -98,7 +129,21 @@ let createHighlight = (data, target) => {
 
 let highlightsSlides = document.querySelector(".highlights_slides")
 
-highlights.today.forEach(item => {
+// For highlights nav
+let highlightNavs = document.querySelectorAll(".highlights_nav .nav_item")
+
+highlightNavs.forEach(item => {
+	item.addEventListener("click", () => {
+		highlightNavs.forEach(targ => {
+			targ.classList.remove("nav_item-active")
+		})
+		item.classList.add("nav_item-active")
+
+
+		highlights[item.getAttribute("data-option")].forEach(item => {
+			highlightsSlides.innerHTML = ""
 	createHighlight(item, highlightsSlides)
 	
+})
+	})
 })
