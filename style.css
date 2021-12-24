@@ -66,13 +66,14 @@ body {
 	background: var(--main-bg);
 }
 header {
+	transition: 1s all;
 	position: fixed;
 	width: 100vw;
 	top: 0;
 	left: 0;
 	background: transparent;
-	height: 8vh;
-	padding: 10px;
+	height: 9vh;
+	padding: 10px 30px;
 	display: flex;
 	align-items: center;
     font-family: Lato;
@@ -180,9 +181,23 @@ section {
 .hero_img img{
 	position: relative;
 	left: -100px;
-	
+
 	filter: drop-shadow(8px 10px 4px #0008);
 	/*width: 2000px;*/
+}
+
+#hero {
+	flex-direction: column-reverse;
+	grid-gap: 0;
+	background-size: 200%;
+	background-position: -300px -10px;
+}
+
+.hero_img {
+	width: 100%;
+	padding-bottom: 0;
+	/*position: absolute;*/
+	/*z-index: -1;*/
 }
 
 #highlights {
@@ -197,6 +212,17 @@ section {
 	padding: 10px;
 	width: 100%;
 
+}
+
+.highlights_slides {
+	display: inline-flex;
+	grid-gap: 20px;
+	max-width: 90vw;
+	overflow: auto
+}
+
+.order {
+	min-width: 400px;
 }
 
 .nav_item {
@@ -306,8 +332,13 @@ section {
 input, textarea {
 	padding: 10px;
 	resize: none;
+	caret-color: var(--primary-color) ;
+	caret-shape: block;
+	font-family: var(--font);
 }
-
+input:focus, textarea:focus {
+	outline-color: var(--primary-color)
+}
 footer {
 	display: flex;
 	grid-gap: 20px;
@@ -318,7 +349,7 @@ footer {
 
 	@media (min-width: 640px) {
 		header {
-			transition: 1s all;
+			
 			height: 15vh;
 			padding: 10px 4em;
 		}

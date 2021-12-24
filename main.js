@@ -36,6 +36,12 @@ let highlights = {
 		sides: "Chicken Wings",
 		toppings: "Pepper Sauce",
 		price: "5000"
+	}, 
+	{
+		name: "Chohe Pancakes",
+		sides: "Chicken Wings",
+		toppings: "Pepper Sauce",
+		price: "5000"
 	}
 	],
 	week: [
