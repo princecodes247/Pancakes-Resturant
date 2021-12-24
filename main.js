@@ -32,6 +32,7 @@ highlightNavs.forEach(item => {
 let highlights = {
 	today: [
 		{
+		img: "",
 		name: "Chohe Pancakes",
 		sides: "Chicken Wings",
 		toppings: "Pepper Sauce",
@@ -83,7 +84,10 @@ let createHighlight = (data, target) => {
 	info.appendChild(order)
 	let img = document.createElement("div")
 	img.classList.add("order_img")
-
+	img.style.background = "url('img (4).jpg')";
+	img.style.backgroundPosition = "0px";
+	img.style.backgroundSize = "120px";
+	img.style.backgroundRepeat = "no-repeat";
 		let body = document.createElement("div")
 	body.classList.add("order")
 	body.appendChild(img)

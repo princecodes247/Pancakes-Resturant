@@ -147,10 +147,7 @@ section {
 	align-items: center;
 	background: url("bg4.svg");
 	background-repeat: no-repeat;
-	background-size: 100%;
-
-	/*With bg4*/
-	background-position: 90px -210px;
+	
 	/*clip-path: url(#waveSvg)*/
 }
 
@@ -185,7 +182,6 @@ section {
 	filter: drop-shadow(8px 10px 4px #0008);
 	/*width: 2000px;*/
 }
-
 #hero {
 	flex-direction: column-reverse;
 	grid-gap: 0;
@@ -252,10 +248,12 @@ section {
 	height: 140px;
 	width: 140px;
 	/*background-color: #777;*/
-	background: url("test.jpg");
-	background-position: 300px;
-	background-size: 420px
+	/*background: url("burger.jpg");
+	background-position: 0px;
+	background-size: 120px;
+	background-repeat: no-repeat;*/
 }
+
 
 .order_info {
 	text-align: left;
@@ -301,7 +299,7 @@ section {
 }
 
 #contact {
-	padding: 50px 0;
+	padding: 50px 1em;
 }
 
 .contact-info {
@@ -338,6 +336,7 @@ input, textarea {
 }
 input:focus, textarea:focus {
 	outline-color: var(--primary-color)
+
 }
 footer {
 	display: flex;
@@ -362,8 +361,27 @@ footer {
 			#hero {
 				justify-content: start;
 				text-align: left;
-			}
+				flex-direction: row;
+				background-size: 100%;
 
+	/*With bg4*/
+	background-position: 90px -210px;
+			}
+			.hero_img {
+					position: relative;
+					/*left: 10px;*/
+					flex: 1;
+					height: 80%;
+					width: 80%;
+					overflow: hidden;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					/*padding-left: 100px;*/
+					padding-bottom: 100px;
+
+					/*background: #000*/
+				}
 			.hero_text {
 				text-align: left;
 				align-items: start;
@@ -379,7 +397,9 @@ footer {
 			}
 
 			#contact form {
-				padding: 0 26em;
+				/*padding: 0 16vw;*/
+				max-width: 700px;
+				margin: 0 auto ;
 			}
 
 		}
