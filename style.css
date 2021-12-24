@@ -76,10 +76,79 @@ header {
 	padding: 10px 30px;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
     font-family: Lato;
   z-index: 6;
 }
 
+header nav {
+	display: none;
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+	grid-gap: 40px;
+}
+
+header nav ul li {
+	position: relative;
+	padding: 5px 20px;
+	cursor: pointer;
+	/*background: #bbb1;*/
+}
+header nav ul li:hover::before {
+	content: "";
+	position: absolute;
+	bottom: 3px;
+	left: 0;
+	right: 0;
+	background: var(--primary-color);
+	filter: brightness(90%);
+	z-index: -1;
+	height: 7px;
+
+}
+
+.menu-btn {
+	width: 30px;
+	height: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	/*background: #000;*/
+	transition: transform 400ms;
+	transform: rotate(0deg);
+}
+.menu-btn-lines {
+	width: 100%;
+	height: 3px;
+	background: #000;
+	border-radius: 100px;
+	transition: all 300ms;
+}
+
+.menu-btn.active {
+	transform: rotate(90deg);
+	/*height: 10px;*/
+	/*justify-content: center;*/
+}
+.active .menu-btn-lines:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+}
+.active .menu-btn-lines:nth-child(2) {
+	width: 3px;
+}
+.active .menu-btn-lines:nth-child(3) {
+	transform: translateY(-9px) rotate(-45deg);
+}
+.active .menu-btn-lines {
+	width: 100%;
+	height: 3px;
+	background: #000;
+	border-radius: 1000px;
+}
 .logo img {
 	filter: hue-rotate(180deg);
 }
@@ -355,8 +424,20 @@ footer {
 		header.small {
 			height: 9vh;
 		}
+		header nav {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		header nav ul {
+			
+		}
+		header .menu-btn {
+				display: none;
+		}
 		.highlights_nav {
-				padding: 0 16em;
+				padding: 0 16vw;
 			}
 			#hero {
 				justify-content: start;
