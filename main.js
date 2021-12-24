@@ -129,6 +129,7 @@ let createHighlight = (data, target) => {
 	img.style.backgroundRepeat = "no-repeat";
 		let body = document.createElement("div")
 	body.classList.add("order")
+	body.classList.add("fade-in")
 	body.appendChild(img)
 	body.appendChild(info)	
 	target.appendChild(body)	
@@ -154,4 +155,11 @@ highlightNavs.forEach(item => {
 	
 })
 	})
+})
+
+
+		highlights.today.forEach(item => {
+			highlightsSlides.innerHTML = ""
+	createHighlight(item, highlightsSlides)
+	
 })
