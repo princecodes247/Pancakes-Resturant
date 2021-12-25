@@ -83,6 +83,9 @@ header {
 
 header nav {
 	/*display: none;*/
+	transform-origin: top;
+	transition: transform 600ms;
+	transform: scaleY(0);
 	height: 100vh;
 	position: fixed;
 	top: 0;
@@ -91,7 +94,11 @@ header nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	background: var(--primary-color);
+}
+header nav.active {
+	transform: scaleY(1);
 }
 
 header nav ul {

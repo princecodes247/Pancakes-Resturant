@@ -2,6 +2,7 @@
 // For Header
 let header = document.querySelector("header")
 
+let headerNav = document.querySelector("header nav")
   
 
 window.onscroll = function() {scrollFunction()};
@@ -19,6 +20,7 @@ let menuBtn = document.querySelector(".menu-btn")
 	menuBtn.addEventListener("click", () => {
 
 		menuBtn.classList.toggle("active")
+		headerNav.classList.toggle("active")
 
 })
   
