@@ -250,7 +250,7 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: url("bg4.svg");
+	background: url("img/bg4.svg");
 	background-repeat: no-repeat;
 	overflow: hidden;
 	/*clip-path: url(#waveSvg)*/

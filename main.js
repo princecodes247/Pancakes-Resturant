@@ -28,7 +28,7 @@ let menuBtn = document.querySelector(".menu-btn")
 let highlights = {
 	today: [
 		{
-		img: "./burger.png",
+		img: "./img/burger.png",
 		name: "Beef Burger",
 		sides: "Chips",
 		toppings: "Pepper Sauce",
@@ -37,7 +37,7 @@ let highlights = {
 	],
 	week: [
 	{
-	img: "./burger.png",
+	img: "./img/burger.png",
 		name: "Beef Burger",
 		sides: "Chips",
 		toppings: "Pepper Sauce",
@@ -47,7 +47,7 @@ let highlights = {
 	month: [
 	, 
 	{
-		img: "./honey.png",
+		img: "./img/honey.png",
 		name: "Plain Pancakes",
 		sides: "Chicken",
 		toppings: "Honey",
@@ -58,28 +58,28 @@ let highlights = {
 let test = {
 	today: [
 		{
-		img: "./burger.png",
+		img: "./img/burger.png",
 		name: "Beef Burger",
 		sides: "Chips",
 		toppings: "Pepper Sauce",
 		price: "5000"
 	}, 
 	{
-		img: "./honey.png",
+		img: "./img/honey.png",
 		name: "Plain Pancakes",
 		sides: "Chicken",
 		toppings: "Honey",
 		price: "2300"
 	},
 	{
-		img: "./fruits.png",
+		img: "./img/fruits.png",
 		name: "Plain Pancakes",
 		sides: "Fruits",
 		toppings: "Maple Syrup",
 		price: "2300"
 	},
 	{
-		img: "./nuggets.png",
+		img: "./img/nuggets.png",
 		name: "Plain Pancakes",
 		sides: "Fruits",
 		toppings: "Maple Syrup",
