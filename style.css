@@ -267,7 +267,7 @@ section {
 .hero_img img{
 	position: relative;
 	left: 75px;
-	top: -10px;
+	top: 20px;
 	filter: drop-shadow(8px 10px 4px #0008);
 	/*background: #000;*/
 	transform: scale(0.9);
