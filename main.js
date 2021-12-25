@@ -114,7 +114,7 @@ let createHighlight = (data, target) => {
 	let price = document.createElement("p")
 	price.innerText = "N" + data.price
 	let order = document.createElement("button")
-	order.innerText = "Place your Order"
+	order.innerText = "Place Order"
 	
 	let info = document.createElement("div")
 	info.classList.add("order_info")
