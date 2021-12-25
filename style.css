@@ -149,7 +149,7 @@ header nav ul li:hover::before {
 }
 
 .menu-btn.active {
-	transform: rotate(90deg);
+	transform: rotate(-180deg);
 	/*height: 10px;*/
 	/*justify-content: center;*/
 }
