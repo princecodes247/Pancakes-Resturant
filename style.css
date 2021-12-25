@@ -64,6 +64,7 @@ body {
   font-family: var(--font);
   font-display: swap;
 	background: var(--main-bg);
+
 }
 header {
 	transition: 1s all;
@@ -234,7 +235,7 @@ section {
 	align-items: center;
 	background: url("bg4.svg");
 	background-repeat: no-repeat;
-	
+	overflow: hidden;
 	/*clip-path: url(#waveSvg)*/
 }
 
@@ -250,9 +251,9 @@ section {
 	position: relative;
 	/*left: 10px;*/
 	/*flex: 1;*/
-	height: 50%;
+	height: 40%;
 	width: 80%;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -305,10 +306,10 @@ section {
 	max-width: 90vw;
 	overflow: hidden
 }
-
+/*
 .order {
 	min-width: 400px;
-}
+}*/
 
 .nav_item {
 	padding: 1em 10px;
@@ -505,10 +506,18 @@ footer {
 		}
 @media (min-width: 800px) {
 			header nav {
+				transform: scaleY(1);
+				height: unset;
+				width: unset;
+				position: static;
+				background: unset;
 			flex: 1;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+		}
+		header nav ul {
+			flex-direction: row;
 		}
 
 		header .menu-btn {
