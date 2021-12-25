@@ -582,7 +582,7 @@ footer span:hover svg {
 @keyframes fadeIn {
 	from {
 		opacity: 0;
-		transform: translateY(3px);
+		transform: translateY(10px);
 	}
 	to {
 		opacity: 1;
