@@ -536,8 +536,8 @@ footer span svg {
 					transform: scale(1.3);
 }
 .hero_img img{
-				
-					left: 40px;
+					top: 5px;
+					left: -40px;
 				}
 }
 		@media (min-width: 640px) {}
