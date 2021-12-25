@@ -441,6 +441,10 @@ footer {
 }
 
 footer span svg {
+	fill: #000;
+        transition: fill 400ms;
+}
+footer span:hover svg {
 	fill: var(--primary-color);
 }
 @media (min-width: 640px) {
