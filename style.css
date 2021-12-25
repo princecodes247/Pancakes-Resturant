@@ -316,6 +316,7 @@ section {
 	background-color: var(--button-active);
 	flex: 1;
 	filter: grayscale(100%);
+	transition: filter 300ms;
 }
 .nav_item:hover {
 	filter: grayscale(80%);
