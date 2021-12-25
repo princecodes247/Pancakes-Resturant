@@ -82,12 +82,22 @@ header {
 }
 
 header nav {
-	display: none;
+	/*display: none;*/
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--primary-color);
 }
 
 header nav ul {
 	list-style: none;
 	display: flex;
+	flex-direction: column;
 	grid-gap: 40px;
 }
 
@@ -235,10 +245,10 @@ section {
 	/*flex: 1;*/
 	height: 50%;
 	width: 80%;
-	/*overflow: hidden;*/
+	overflow: hidden;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 	/*padding-left: 100px;*/
 	padding-bottom: 100px;
 
@@ -448,7 +458,7 @@ footer {
 				padding: 0;
 					flex: 1;
 					left: 0px;
-					top: -40px;
+					top: 10px;
 					transform: scale(1);
 					height: 80%;
 					overflow: hidden;
