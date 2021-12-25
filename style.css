@@ -252,7 +252,7 @@ section {
 	position: relative;
 	/*left: 10px;*/
 	/*flex: 1;*/
-	height: 40%;
+	height: 45%;
 	width: 80%;
 	/*overflow: hidden;*/
 	display: flex;
@@ -266,11 +266,11 @@ section {
 
 .hero_img img{
 	position: relative;
-	left: 75px;
-	top: -10px;
+	left: 5px;
+	top: 75px;
 	filter: drop-shadow(8px 10px 4px #0008);
 	/*background: #000;*/
-	transform: scale(0.9);
+	transform: scale(0.7);
 	/*width: 2000px;*/
 }
 #hero {
