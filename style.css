@@ -57,7 +57,19 @@
 }
 
 
+.dark {
+	--main-bg: #141414;
+	--sub-bg: var(--sunglow);
+	--alt-bg: var(--blue-green);
+	--secondary-color: #457b9d;
+	--primary-color: var(--honey-yellow);
+	--alt-color: var(--);
+	color: #fff;
+}
 
+.dark svg {
+	fill: #fff;
+}
  
 
 body {
@@ -81,7 +93,9 @@ header {
     font-family: Lato;
   z-index: 6;
 }
-
+.dark header .logo {
+	filter: invert()
+}
 header nav {
 	/*display: none;*/
 	transform-origin: top;
