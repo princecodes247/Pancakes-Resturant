@@ -360,11 +360,7 @@ section {
 }
 
 .menu-item-img {
-	/*background-color: #555;*/
-	background-image: url("img.png");
-	background-repeat: no-repeat;
-	background-size: 220px;
-	background-position: -80px;
+
 	width: 120px;
 	height: 120px;
 	margin-bottom: 10px;
