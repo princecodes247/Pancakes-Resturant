@@ -78,6 +78,35 @@ body {
 	background: var(--main-bg);
 
 }
+
+#splash {
+	background: var(--primary-color);
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 10;
+	animation: slideIn 1300ms cubic-bezier(0.16,1, 0.3,1), slideOut 500ms 2s ease-in-out forwards;
+
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@keyframes slideOut {
+	0% {
+		transform: translateY(0%);
+	}
+	100% {
+		transform: translateY(100%);
+	}
+}
+
 header {
 	transition: 1s all;
 	position: fixed;
@@ -99,45 +128,54 @@ header {
 header nav {
 	/*display: none;*/
 	transform-origin: top;
-	transition: transform 600ms;
-	transform: scaleY(0);
-	height: 100vh;
+	/*transform: translateY(-100%);*/
+	opacity: 0;
+	transition: opacity 400ms;
+	/*height: 14em;*/
 	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
+	top: 3em;
+	right: 20px;
+	border-radius: 4px;
+	/*width: 100vw;*/
+	padding: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background: var(--primary-color);
+	background: var(--main-bg);
+	box-shadow: 0px 0px 8px 1px #1112;
 }
 header nav.active {
-	transform: scaleY(1);
+	opacity: 1;
+	/*transform: translateY(0%);*/
 }
 
 header nav ul {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
-	grid-gap: 40px;
+	/*grid-gap: 40px;*/
 }
-
+.btn_set {
+	display: flex;
+	grid-gap: 10px;
+}
 header nav ul li {
 	position: relative;
 	padding: 5px 20px;
 	cursor: pointer;
-	font-size: 1.7em;
+	font-size: 1.1em;
+	/*border-bottom: 1px solid #6666;*/
 	/*background: #bbb1;*/
 }
 header nav ul li:hover::before {
 	content: "";
 	position: absolute;
-	bottom: 3px;
+	bottom: 5px;
 	left: 0;
 	right: 0;
 	background: var(--primary-color);
-	filter: brightness(90%);
+	/*filter: brightness(90%);*/
 	z-index: -1;
 	height: 7px;
 
