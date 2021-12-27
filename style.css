@@ -255,7 +255,7 @@ button:active, .button:active {
 	}
 
 h1 {
-	font-size: 3.47em;
+	font-size: 3.07em;
 }
 h2 {
 	font-size: 2.47em;
@@ -502,6 +502,9 @@ footer span:hover svg {
 	fill: var(--primary-color);
 }
 @media (min-width: 640px) {
+h1 {
+	font-size: 3.47em;
+}
 		header {
 			
 			height: 15vh;
